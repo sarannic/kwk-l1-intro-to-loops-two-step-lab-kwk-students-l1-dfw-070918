@@ -32,15 +32,18 @@ def a_few_more_steps
 end
 end
 
-steps = 0
-
 def how_many_steps?
+  steps = 0
   loop do 
     steps += 1
     puts "steps"
-    
-  # Write a loop that fulfills all criteria from Part 3 of the README.md
+    if (steps % 2 == 0)
+      puts "left"
+    else
+      puts "right"
 end
+sleep(0.5)
+end 
 
 def break_dance
   # Write a solution that uses the same code as how_many_steps?, but breaks the
